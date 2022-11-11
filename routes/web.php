@@ -20,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/room', [RoomController::class, 'show']);
+Route::get('/room/create', [RoomController::class, 'store']);
