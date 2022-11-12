@@ -1,4 +1,13 @@
-# Para realização de testes acesse: watchmebr.liveblog365.com
+# Para realização de testes realize estes passos:
+- Extraia e importe o base de dados watchme.sql em seu localhost
+- Clone o repositório no caminho que desejar
+- Inicialize seu localhost (MySQL)
+- Navegue até o diretório do projeto extraido 
+- Instale as dependências com composer install e npm install
+- Execute os comandos ´php artisan serve´ e ´npm run dev´
+- Aproveite :)
+
+(Infelizmente não consegui realizar muito desenvolvimento e deploy da aplicação devido minha rotina de trabalho e estudos e esta é minha primeira aplicação laravel, agradeço a compreesão)
 
 
 
