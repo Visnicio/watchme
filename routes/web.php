@@ -20,4 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/room', [RoomController::class, 'show']);
-Route::get('/room/create', [RoomController::class, 'store']);
+Route::post('/room/create', [RoomController::class, 'store']);
+Route::put('/room/update', [RoomController::class, 'update']);

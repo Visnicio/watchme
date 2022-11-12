@@ -17,11 +17,26 @@ class RoomController extends Controller
     }
 
     public function store(){
-        $room = DB::insert("insert into room (video) values ('')");
+        // $room = DB::insert("insert into room (video) values ('')");
+
+        $roomId = DB::table("room")->insertGetId(
+            array("video" => "Aguardando Vídeo...")
+        );
 
         // $room->save();
 
-        // $insertId = $room->id;
-        return $room;
+        // return ($roomId);
+        return redirect('/room?id='.$roomId);
+    }
+
+    public function update(Request $request){
+        $id = $request->id;
+        $link = $request->video_link;
+
+        $embed_link = explode("=", $link);
+
+        DB::update('update room set video = ? where id = ?', [$embed_link[1], $id]);
+
+        return redirect('/room?id='.$id);
     }
 }

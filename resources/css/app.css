@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    .btn{
+        @apply bg-rose-600 p-6 text-white rounded-lg mx-10 border-2 border-rose-600 hover:bg-transparent hover:border-2 hover:border-rose-600 transition-all duration-100;
+    }
+    .btn-sm{
+        @apply bg-rose-600 px-2 py-1 text-white rounded-lg mx-10 border-2 border-rose-600 hover:bg-transparent hover:border-2 hover:border-rose-600 transition-all duration-100;
+    }
+}

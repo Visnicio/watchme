@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en_US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,7 @@
         </div>
     </body>
     <footer>
+        @yield('footer')
         @yield('footer_scripts')
     </footer>
 </html>
